@@ -19,12 +19,12 @@
             //$mail->SMTPDebug = SMTP::DEBUG_SERVER; //Apresenta o debug
             $mail->CharSet = 'UTF-8';
             $mail->isSMTP();                                 //Send using SMTP
-            $mail->Host       = 'smtp-mail.outlook.com';          //Set the SMTP server to send through
+            $mail->Host       = '';          //Set the SMTP server to send through
             $mail->SMTPAuth   = true;                        //Enable SMTP authentication
-            $mail->Username   = 'apresentacao.jaque@outlook.com';          //SMTP username
-            $mail->Password   = 'Baladegoma';                    //SMTP password
+            $mail->Username   = '';          //SMTP username
+            $mail->Password   = '';                    //SMTP password
             $mail->SMTPSecure = 'tsl'; //Enable implicit TLS encryption
-            $mail->Port       = 587;                         //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+            $mail->Port       = '';                         //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
             if(isset($_POST['namefeedback']) && !empty($_POST['namefeedback'])){
                 $nome = $_POST['namefeedback'];
